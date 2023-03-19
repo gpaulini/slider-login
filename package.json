@@ -1,0 +1,12 @@
+{
+  "name": "slider-login",
+  "version": "1.0.0",
+  "description": "inspired by florinpop",
+  "main": "index.js",
+  "author": "gpaulini",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0"
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Very Cool Login Screen 2</title>
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+<body>
+    <main class="main-wrapper js-main">
+        <div class="layer layer--form">
+            <div class="layer__form-box layer__slide layer__slide--login">
+                <h2 class="layer__title">Sign in</h2>
+                <div class="layer__form-box__socials">
+                    <a href="#fb-login"><img src="./assets/facebook.png" alt="facebook"></a>
+                    <a href="#gl-login"><img src="./assets/google.png" alt="google"></a>
+                    <a href="#li-login"><img src="./assets/linkedin.png" alt="linkedin"></a>
+                </div>
+                <span>or use your account</span>
+                <form class="layer__form-box__form" action="#signin" method="post">
+                    <label for="user-email">Email</label>
+                    <input class="layer__form-box__form__input" type="email" name="user-email" id="user-email" placeholder="Email" required>
+                    <label for="user-password">Password</label>
+                    <input class="layer__form-box__form__input" type="password" name="user-password" id="user-password" placeholder="Password" required>
+                    <button class="layer__form-box__form__button layer__button layer__button--hued" type="submit">Sign In</button>
+                </form>
+            </div>
+            <div class="layer__form-box layer__slide layer__slide--sign-up">
+                <h2 class="layer__title">Create Account</h2>
+                <div class="layer__form-box__socials">
+                    <a href="#fb-signup"><img src="./assets/facebook.png" alt="facebook"></a>
+                    <a href="#gl-signup"><img src="./assets/google.png" alt="google"></a>
+                    <a href="#li-signup"><img src="./assets/linkedin.png" alt="linkedin"></a>
+                </div>
+                <span>or use your email for registration</span>
+                <form class="layer__form-box__form" action="#signup" method="post">
+                    <label for="user-name">Name</label>
+                    <input class="layer__form-box__form__input" type="text" name="user-name" id="user-name" placeholder="Name" required>
+                    <label for="user-email">Email</label>
+                    <input class="layer__form-box__form__input" type="email" name="user-email" id="user-email" placeholder="Email" required>
+                    <label for="user-password">Password</label>
+                    <input class="layer__form-box__form__input" type="password" name="user-password" id="user-password" placeholder="Password" required>
+                    <button class="layer__form-box__form__button layer__button layer__button--hued" type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        <div class="layer layer--poster">
+            <div class="layer__poster-box layer__slide layer__slide--login">
+                <h2 class="layer__title">Hello, Friend!</h2>
+                <span>Enter your personal details and start journey with us</span>
+                <button class="layer__poster-box__button layer__button js-switch">Sign Up</button>
+            </div>
+            <div class="layer__poster-box layer__slide layer__slide--sign-up">
+                <h2 class="layer__title">Welcome Back!</h2>
+                <span>To keep connected with us please login with yout personal info</span>
+                <button class="layer__poster-box__button layer__button js-switch">Sign In</button>
+            </div>
+        </div>
+    </main>
+    <footer>Recreating Slider Sign-in/Sign-up Form, inspired by florin pop. @gpaulini, 2023</footer>
+    
+    <script src="dist/index.js"></script>
+</body>
+</html>

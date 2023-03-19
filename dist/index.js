@@ -1,0 +1,1 @@
+const mainElement=document.querySelector(".js-main"),switchFormsButtons=document.querySelectorAll(".js-switch");switchFormsButtons.forEach(function(t){t.addEventListener("click",function(t){void 0===mainElement.dataset.state?mainElement.dataset.state="signup":delete mainElement.dataset.state})});
