@@ -9,7 +9,7 @@ gulp.task('minify-js', function () {
 });
 
 gulp.task('compile-sass', function () {
-  return gulp.src('src/*.scss')
+  return gulp.src('src/style.scss')
     .pipe(sass())
     .pipe(gulp.dest('dist'));
 });

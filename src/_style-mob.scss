@@ -1,0 +1,91 @@
+@media screen and (max-width: 768px) {
+    .main-wrapper {
+        width: $layer-width;
+        height: 500px;
+        flex-direction: column;
+    }
+
+    .layer {
+        &--form {
+            top: 0;
+            height: 75%;
+            transition: top .5s linear,
+                transform .5s linear;
+
+            [data-state='signup'] & {
+                left: 0;
+                top: 100%;
+                transform: translateY(-100%);
+            }
+
+            .layer__slide {
+                transition: bottom .5s linear,
+                    top .5s linear;
+
+                &--login {
+                    [data-state='signup'] & {
+                        left: 0;
+                        bottom: 100%;
+                    }
+                }
+
+                &--sign-up {
+                    right: 0;
+                    top: 100%;
+
+                    [data-state='signup'] & {
+                        top: 0;
+                    }
+                }
+            }
+        }
+
+        &--poster {
+            height: 25%;
+            left: 0;
+            bottom: 0;
+            flex-shrink: 3;
+            border-radius: 0 0 8px 8px;
+            transition: bottom .5s linear,
+                transform .5s linear;
+
+            .layer__title {
+                display: none;
+            }
+
+            [data-state='signup'] & {
+                bottom: 100%;
+                transform: translateY(100%);
+                border-radius: 8px 8px 0 0;
+            }
+        }
+         
+        &__form-box {
+            &__socials {
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            &__form {
+                &__input {
+                    padding: 12px 16px;
+                }
+            }
+
+            .layer__button {
+                margin-top: 10px;
+            }
+        }
+
+        &__poster-box {
+            gap: 8px;
+        }
+
+        &__button {
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+    }
+}
